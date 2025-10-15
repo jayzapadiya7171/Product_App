@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  width: 1480px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Login Page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: auto;
+}
+.login-box h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #bdc3c7;
+}
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-box button:hover {
+  background-color: #34495e;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Product Page */
+.product-page {
+  padding: 20px;
+  background-color: #ecf0f1;
+  min-height: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.product-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.product-card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-
-.card {
-  padding: 2em;
+.product-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-.read-the-docs {
-  color: #888;
+.product-card button:hover {
+  background-color: #34495e;
 }
